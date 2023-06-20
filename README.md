@@ -1,5 +1,8 @@
 # Vim
 
+# TODO
+- [Finish the setup of some advanced plugins](https://www.makeuseof.com/best-vim-plugins/)
+
 ## Debian 12 and Ubuntu clipboard support
 
 ### Dependencies
@@ -40,7 +43,6 @@ cd ~/.vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git Vundle.vim
 git clone https://github.com/spc2538/vim-ide.git /tmp/vim-ide
 cp /tmp/vim-ide/.vimrc ~/.vimrc
-
 cat ~/.vimrc
 
 vim ~/.vimrc
@@ -51,3 +53,4 @@ vim ~/.vimrc
 vim +PluginInstall +qall
 
 ```
+

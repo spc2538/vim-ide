@@ -17,7 +17,7 @@ set laststatus=2
 set autowrite
 set cursorline
 set autoread
-set scrolloff=5
+set scrolloff=4
 syntax on
 filetype on
 
