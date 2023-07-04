@@ -15,7 +15,7 @@ set backspace=2
 set showcmd
 set laststatus=2
 set autowrite
-set cursorline
+" set cursorline
 set autoread
 set scrolloff=4
 syntax on
@@ -42,9 +42,8 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-commentary'
 
-colorscheme moonfly
-set background=dark
-colorscheme aylin
+" set background=light
+" colorscheme delek
 
 let NERDTreeShowBookmarks = 1   " Show the bookmarks table
 let NERDTreeShowHidden = 1      " Show hidden files
