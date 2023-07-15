@@ -43,13 +43,6 @@ cd ~/.vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git Vundle.vim
 git clone https://github.com/spc2538/vim-ide.git /tmp/vim-ide
 cp /tmp/vim-ide/.vimrc ~/.vimrc
-cat ~/.vimrc
-
-vim ~/.vimrc
-: '
-# In Vim
-:PluginInstall
-'
 vim +PluginInstall +qall
 
 ```
