@@ -45,6 +45,9 @@ Plugin 'tpope/vim-commentary'
 " set background=light
 " colorscheme delek
 
+set background=dark
+colorscheme moonfly
+
 let NERDTreeShowBookmarks = 1   " Show the bookmarks table
 let NERDTreeShowHidden = 1      " Show hidden files
 let NERDTreeShowLineNumbers = 0 " Hide line numbers
