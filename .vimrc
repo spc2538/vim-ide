@@ -1,4 +1,5 @@
 set clipboard=unnamedplus
+" set clipboard=unnamed
 set splitbelow
 set mouse=a
 set nu
@@ -41,12 +42,13 @@ Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-commentary'
+Plugin 'morhetz/gruvbox'
 
 " set background=light
 " colorscheme delek
 
 set background=dark
-colorscheme moonfly
+colorscheme gruvbox
 
 let NERDTreeShowBookmarks = 1   " Show the bookmarks table
 let NERDTreeShowHidden = 1      " Show hidden files
@@ -60,6 +62,8 @@ nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
+xnoremap <silent> <C-2> :w !wl-copy<CR><CR>
+xnoremap <silent> <C-k> :w !wl-copy<CR><CR>
 
 autocmd FileType html setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType lua setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
