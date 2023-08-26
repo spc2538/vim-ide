@@ -3,36 +3,39 @@
 # TODO
 - [Finish the setup of some advanced plugins](https://www.makeuseof.com/best-vim-plugins/)
 
+## Install settings
+
+```sh
+mkdir -p ~/.vim/bundle
+cd ~/.vim/bundle
+git clone https://github.com/VundleVim/Vundle.vim.git Vundle.vim
+git clone https://github.com/spc2538/vim-ide.git /tmp/vim-ide
+cp /tmp/vim-ide/.vimrc ~/.vimrc
+vim +PluginInstall +qall
+
+```
+
+### Alias vimx to vi (X11 Only)
+
+```sh
+echo 'alias vi=vimx' >> ~/.bashrc
+source ~/.bashrc
+```
+
+
 ## Fedora Wayland Clipboard
 
 ```sh
-sudo dnf install vim gvim -y
-sudo dnf install wl-clipboard -y
-sudo dnf install fzf -y
+sudo dnf install vim gvim xclip vim-X11
 ```
 
-Inside vim run the following command:
-
-```vim
-:'<,'>w !wl-copy
-```
-
-## Debian 12 and Ubuntu clipboard support
-
-### Dependencies
+### Run vim with x clipboard support
 
 ```sh
-# install 
-sudo apt install vim
-sudo apt-get install vim-gtk3 -y
-sudo apt-get install xclip -y
-sudo apt-get install fzf -y
-# Configure
-vim ~/.vimrc
-:'
-set clipboard=unnamedplus
-'
+vimx
+
 ```
+
 
 ## SSH Support
 
@@ -48,16 +51,22 @@ Host ip
 
 **Sadly, root accounts do not work since you are ssh-ing with a user that is probably not root**
 
-## Install settings
+
+
+## Debian 12 and Ubuntu clipboard support
+
+### Dependencies
 
 ```sh
-
-mkdir -p ~/.vim/bundle
-cd ~/.vim/bundle
-git clone https://github.com/VundleVim/Vundle.vim.git Vundle.vim
-git clone https://github.com/spc2538/vim-ide.git /tmp/vim-ide
-cp /tmp/vim-ide/.vimrc ~/.vimrc
-vim +PluginInstall +qall
-
+# install
+sudo apt install vim
+sudo apt-get install vim-gtk3 -y
+sudo apt-get install xclip -y
+sudo apt-get install fzf -y
+# Configure
+vim ~/.vimrc
+:'
+set clipboard=unnamedplus
+'
 ```
 
