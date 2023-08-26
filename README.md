@@ -3,6 +3,20 @@
 # TODO
 - [Finish the setup of some advanced plugins](https://www.makeuseof.com/best-vim-plugins/)
 
+## Fedora Wayland Clipboard
+
+```sh
+sudo dnf install vim gvim -y
+sudo dnf install wl-clipboard -y
+sudo dnf install fzf -y
+```
+
+Inside vim run the following command:
+
+```vim
+:'<,'>w !wl-copy
+```
+
 ## Debian 12 and Ubuntu clipboard support
 
 ### Dependencies
