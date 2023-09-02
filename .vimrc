@@ -68,3 +68,15 @@ xnoremap <silent> <C-k> :w !wl-copy<CR><CR>
 autocmd FileType html setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType lua setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType dart setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+
+
+" Add these settings after installing vim-ide"
+
+" WSL yank support
+" let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
+" if executable(s:clip)
+"     augroup WSLYank
+"         autocmd!
+"         autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
+"     augroup END
+" endif
