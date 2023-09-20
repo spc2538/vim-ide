@@ -1,5 +1,4 @@
 set clipboard=unnamedplus
-" set clipboard=unnamed
 set splitbelow
 set mouse=a
 set nu
@@ -16,7 +15,7 @@ set backspace=2
 set showcmd
 set laststatus=2
 set autowrite
-" set cursorline
+set cursorline
 set autoread
 set scrolloff=4
 syntax on
@@ -43,12 +42,15 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-commentary'
 Plugin 'morhetz/gruvbox'
+Plugin 'andreasvc/vim-256noir'
+Plugin 'ap/vim-buftabline'
+Plugin 'danilo-augusto/vim-afterglow'
 
 " set background=light
 " colorscheme delek
 
 set background=dark
-colorscheme gruvbox
+colorscheme afterglow
 
 let NERDTreeShowBookmarks = 1   " Show the bookmarks table
 let NERDTreeShowHidden = 1      " Show hidden files
