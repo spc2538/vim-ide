@@ -3,6 +3,15 @@
 # TODO
 - [Finish the setup of some advanced plugins](https://www.makeuseof.com/best-vim-plugins/)
 
+## Update settings
+
+```sh
+rm -rf /tmp/vim-ide
+git clone https://github.com/spc2538/vim-ide.git /tmp/vim-ide
+cp /tmp/vim-ide/.vimrc ~/.vimrc
+vim +PluginInstall +qall
+```
+
 ## Install settings
 
 ```sh

@@ -21,6 +21,9 @@ set scrolloff=4
 syntax on
 filetype on
 
+set updatetime=100
+
+
 
 " Plugin manager
 set nocompatible
@@ -45,6 +48,7 @@ Plugin 'morhetz/gruvbox'
 Plugin 'andreasvc/vim-256noir'
 Plugin 'ap/vim-buftabline'
 Plugin 'danilo-augusto/vim-afterglow'
+Plugin 'mhinz/vim-signify'
 
 " set background=light
 " colorscheme delek
